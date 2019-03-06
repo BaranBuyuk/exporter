@@ -9,13 +9,6 @@ import com.globalbilisim.exporter.enums.ExcelType;
 import com.globalbilisim.exporter.model.AnnotationModel;
 import com.globalbilisim.exporter.model.Model;
 import com.globalbilisim.exporter.util.Util;
-import java.io.File;
-import java.io.FileOutputStream;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -23,8 +16,15 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
- *
  * @author Baran Buyuk <baranbuyuk@globalbilisim.com>
  */
 public class ExportToExcel implements IExporter {
@@ -86,7 +86,6 @@ public class ExportToExcel implements IExporter {
 
     /**
      * Builder class
-     *
      */
     public static class Builder {
 
@@ -95,14 +94,13 @@ public class ExportToExcel implements IExporter {
          */
         private final File file;
         private final ExcelType type;
-
+        private final Map<String, List> data = new LinkedHashMap<>();
         /**
          * Optional fields
          */
         private Workbook wb;
         private String schemaName;
         private Model model;
-        private final Map<String, List> data = new LinkedHashMap<>();
         private Map<AnnotationModel, List<String>> allData;
 
         /**
@@ -145,7 +143,6 @@ public class ExportToExcel implements IExporter {
         }
 
         /**
-         *
          * @param model
          * @return
          */

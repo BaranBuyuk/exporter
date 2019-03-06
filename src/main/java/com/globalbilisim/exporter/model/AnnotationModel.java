@@ -6,7 +6,6 @@
 package com.globalbilisim.exporter.model;
 
 /**
- *
  * @author Baran Buyuk <baranbuyuk@globalbilisim.com>
  */
 public class AnnotationModel {
@@ -38,7 +37,5 @@ public class AnnotationModel {
         this.excelColumnName = excelColumnName;
     }
 
-
-   
 
 }

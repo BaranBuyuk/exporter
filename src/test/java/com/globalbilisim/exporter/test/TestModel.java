@@ -8,7 +8,6 @@ package com.globalbilisim.exporter.test;
 import com.globalbilisim.exporter.impl.ExcelColumnName;
 
 /**
- *
  * @author Baran Buyuk <baranbuyuk@globalbilisim.com>
  */
 public class TestModel {

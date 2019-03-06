@@ -8,7 +8,6 @@ package com.globalbilisim.exporter.model;
 import java.util.List;
 
 /**
- *
  * @author Baran Buyuk <baranbuyuk@globalbilisim.com>
  */
 public class Model {
@@ -17,9 +16,8 @@ public class Model {
     private final List<?> data;
 
     /**
-     *
      * @param object - for find excel columns
-     * @param data - list of clzz
+     * @param data   - list of clzz
      */
     private Model(Class clzz, List data) {
         this.clzz = clzz;
@@ -28,7 +26,6 @@ public class Model {
     }
 
     /**
-     *
      * @param clzz
      * @param data
      * @param columnNameEnum
