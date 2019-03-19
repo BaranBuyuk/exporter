@@ -8,14 +8,14 @@ package com.globalbilisim.exporter.test;
 import com.globalbilisim.exporter.enums.ExcelType;
 import com.globalbilisim.exporter.impl.ExportToExcel;
 import com.globalbilisim.exporter.model.Model;
-import java.util.ArrayList;
-import java.util.List;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
- *
  * @author Baran Buyuk <baranbuyuk@globalbilisim.com>
  */
 public class ExcelExportTest {

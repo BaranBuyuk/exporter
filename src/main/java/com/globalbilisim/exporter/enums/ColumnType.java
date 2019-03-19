@@ -6,7 +6,6 @@
 package com.globalbilisim.exporter.enums;
 
 /**
- *
  * @author Baran Buyuk <baranbuyuk@globalbilisim.com>
  */
 public enum ColumnType {
